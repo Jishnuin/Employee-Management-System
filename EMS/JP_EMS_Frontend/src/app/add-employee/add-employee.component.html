@@ -1,0 +1,31 @@
+<br>
+{{emp|json}}
+<div style="height: 400px; width: 500px; margin-top: 10px; margin-left: 400px;">
+  <div class="border" style="font-weight: 650; font-size: 30px; background-color: ;">Add Employee</div>
+  <form (ngSubmit)="formSubmit()" class="border" style="margin-top: 10px; padding-bottom: 100px;">
+
+    <div class="form-group">
+      <label>Full Name</label>
+      <input [(ngModel)]="emp.name" name="name" type="text" class="form-control" aria-describedby="fname">
+
+    </div>
+    <div class="form-group">
+      <label>Designation</label>
+      <input [(ngModel)]="emp.design" name="design" type="text" class="form-control" aria-describedby="desig">
+
+    </div>
+    <div class="form-group">
+      <label>Salary</label>
+      <input [(ngModel)]="emp.sal" name="sal" type="number" class="form-control" aria-describedby="sal">
+
+    </div>
+    <div class="form-group">
+      <label>Age</label>
+      <input [(ngModel)]="emp.age" name="age" type="number" class="form-control" aria-describedby="age">
+
+    </div>
+
+    <button style="float: right ;" type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+</div>
